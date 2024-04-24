@@ -1,0 +1,37 @@
+https://noona-hnm.netlify.app/
+
+//  router  설치
+ npm install react-router-dom@6
+
+1.  라우터 세팅 
+2. navbar 세팅
+--> react fontawesome 설치
+1)  npm i --save @fortawesome/fontawesome-svg-core
+2) npm i --save @fortawesome/free-solid-svg-icons
+3) npm i --save @fortawesome/react-fontawesome@latest
+--> react icon 설치
+npm install react-icons --save
+
+
+++ 아이콘 스타일링 
+import { faUser } from '@fortawesome/free-regular-svg-icons';
+
+3. Json Server 패키지 - 데이터 저장
+npm i json-server@0.17.4
+db.json -> root  폴더에 -> 어디에도 속하면 안됨
+
+맥북은 포트번호 5000번이 이미 사용하고 있는 포트 넘버라서 5000번 외에 다른 숫자를 넣어주셔야 합니다! (예: 4000 번)
+json-server 시작 명령어
+json-server --watch db.json --port 5000 
+--> json-server: command not found  에러시 npx json-server --watch db.json --port 5000 
+
+http://localhost:5000/products/1(아이디값으로 테스트)
+
+맥북은 json-server --watch db.json --port 4000 
+
+4. API  부르기 -> useEffect
+
+카드에 마우스를 올려두면 카드가 커지는 hover 이벤트를 만들어 주세요.
+로그인 버튼을 클릭하면 로그인 페이지가 나오게 스스로 도전해보세요!
+로그인 페이지의 디자인을 스스로 해보세요.
+
