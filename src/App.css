@@ -16,6 +16,10 @@ a {text-decoration: none; color: inherit}
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 20px;
+<<<<<<< HEAD
+=======
+  cursor: pointer;
+>>>>>>> 389333e16ef76a58ad5d0a7dae121f1ca057e4a8
 }
 .login_section span {margin-left: 15px; vertical-align: middle;}
 .login_section .login:hover {text-decoration: none; color: #000}
@@ -26,13 +30,18 @@ a {text-decoration: none; color: inherit}
 .gnb_section {
   position: relative;
   display: flex;
+<<<<<<< HEAD
   justify-content: space-between;
+=======
+  justify-content: center;
+>>>>>>> 389333e16ef76a58ad5d0a7dae121f1ca057e4a8
   align-items: center;
 }
 .gnb_section .gnb {
   display: flex;
   width: 60%;
   column-gap: 2.4em;
+<<<<<<< HEAD
   font-size: 1.08em;
 }
 .gnb_section .gnb li {
@@ -43,6 +52,13 @@ a {text-decoration: none; color: inherit}
   color: #fd6562
 }
 
+=======
+}
+.gnb_section .gnb li {
+  line-height: 40px;
+  
+}
+>>>>>>> 389333e16ef76a58ad5d0a7dae121f1ca057e4a8
 .search_area {
   position: absolute;
   right: 0; 
@@ -102,6 +118,10 @@ a {text-decoration: none; color: inherit}
   font-size: 0.85em;
   margin-bottom: 10px;
   text-transform: uppercase;
+<<<<<<< HEAD
+=======
+  padding: 3px 9px;
+>>>>>>> 389333e16ef76a58ad5d0a7dae121f1ca057e4a8
 }
 .product_list .item_title {
   font-size: 1.15em;
@@ -109,7 +129,11 @@ a {text-decoration: none; color: inherit}
   color: #000;
 }
 .product_list .top {
+<<<<<<< HEAD
   height: 60px;
+=======
+  height: 44;
+>>>>>>> 389333e16ef76a58ad5d0a7dae121f1ca057e4a8
 }
 .product_list .bottom {
   display: flex;
@@ -118,10 +142,22 @@ a {text-decoration: none; color: inherit}
 .product_list .bottom span:first-child {
   font-weight: 400;
   color: #fff;
+<<<<<<< HEAD
   padding: 5px 15px;
+=======
+  padding: 0 12px;
+>>>>>>> 389333e16ef76a58ad5d0a7dae121f1ca057e4a8
   border-radius: 40px;
   background: #fd6562;
 }
 .product_list .bottom span+span {
   color: #fd6562
+<<<<<<< HEAD
+=======
+}
+
+/* container */
+.container.login_cont {
+  width: 25vw;
+>>>>>>> 389333e16ef76a58ad5d0a7dae121f1ca057e4a8
 }

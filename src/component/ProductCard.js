@@ -10,6 +10,10 @@ import { useNavigate } from 'react-router-dom';
 `; */
 
 export const ProductCard = ({ item }) => {
+<<<<<<< HEAD
+=======
+    // isNew prop을 사용하여 새 상품 여부를 NewItem에 전달
+>>>>>>> 389333e16ef76a58ad5d0a7dae121f1ca057e4a8
     // `item.new`가 undefined일 수 있으므로, boolean 값으로 변환
     // item이 존재하고 그 속성 중에 new가 있는 경우에만 isNew 변수를 true로 설정
     //!! 연산자는 값을 불리언 값으로 강제 변환시키는 데 사용. 
@@ -40,4 +44,8 @@ export const ProductCard = ({ item }) => {
             </div>
         </div>
     )
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 389333e16ef76a58ad5d0a7dae121f1ca057e4a8
