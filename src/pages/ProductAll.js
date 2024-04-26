@@ -7,12 +7,13 @@ export const ProductAll = () => {
     let [products, setProducts] = useState([]);
     const [query, setQuery] = useSearchParams();
     let [error, setError] = useState("");
+    console.log(products);
 
     //json-server에 있는 db.json 데이터를 요청 -> api 요청
     const getProducts = async () => {
         try {
             let keyword = query.get("q") || "";
-            let url = `https://github.com/HeoSsaM/peachandlily/blob/master/db.json?q=${keyword}`;
+            let url = `http://localhost:5000/products/?q=${keyword}`;
             let response = await fetch(url);
             let data = await response.json();
             if (data.length < 1) {

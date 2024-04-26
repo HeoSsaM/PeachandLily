@@ -23,16 +23,7 @@ export const Navbar = ({ authenticate, setAuthenticate }) => {
         navigate('/login');
     }
     
-<<<<<<< HEAD
-    const onCheckEnter = (event) => {
-        if (event.key === "Enter") {
-          navigate(`?q=${event.target.value}`);
-        }
-      };
-    /* const search = (event) => {
-=======
     const search = (event) => {
->>>>>>> 389333e16ef76a58ad5d0a7dae121f1ca057e4a8
         //console.log('key down')
         //event.key=키보드 이벤트에서 키의 이름
         if (event.key === "Enter") {
@@ -44,11 +35,7 @@ export const Navbar = ({ authenticate, setAuthenticate }) => {
            navigate(`/?q=${keyword}`)
 
         }
-<<<<<<< HEAD
-    } */
-=======
     }
->>>>>>> 389333e16ef76a58ad5d0a7dae121f1ca057e4a8
     return (    
     <Container>
         {/* <div className="login_section" onClick={ gotoLogin }>
@@ -89,19 +76,11 @@ export const Navbar = ({ authenticate, setAuthenticate }) => {
             <div className="search_area">
                 <label htmlFor="search" className='search_box'>
                     <FiSearch size="20" />
-<<<<<<< HEAD
-                    <input type="text" placeholder="제품검색" onKeyPress={onCheckEnter} />
-=======
                     <input type="text" id="search" placeholder='제품검색' 
                     onKeyDown={(event)=> search(event) } />
->>>>>>> 389333e16ef76a58ad5d0a7dae121f1ca057e4a8
                 </label>
             </div>
         </div> 
     </Container>
   )
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 389333e16ef76a58ad5d0a7dae121f1ca057e4a8

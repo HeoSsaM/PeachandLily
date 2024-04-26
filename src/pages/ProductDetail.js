@@ -5,8 +5,9 @@ import { useParams } from 'react-router-dom';
 export const ProductDetail = () => {
   let { id } = useParams();
   const [product, setProduct] = useState(null);
+  console.log(product)
   const getProductDetail = async () => {
-    let url = `https://github.com/HeoSsaM/peachandlily/blob/master/db.json/${id}`;
+    let url = `http://localhost:5000/products/${id}`;
     let response = await fetch(url);
     let data = await response.json();
     console.log(data);

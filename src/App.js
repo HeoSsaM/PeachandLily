@@ -33,7 +33,7 @@ function App() {
 
         {/* privateRoute 설정 */}
         {/* <Route path="/product/:id" element={<PrivateRoute authenticate={authenticate} />}/> */}
-        <Route path="/product/:id" element={ <PrivateRoute /> } />
+        <Route path="/product/:id" element={ <PrivateRoute authenticate={authenticate}/> } />
 
         <Route path="/login" element={<Login setAuthenticate={setAuthenticate} />}/>
       </Routes>
