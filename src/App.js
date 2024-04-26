@@ -32,7 +32,8 @@ function App() {
         {/* <Route path="/products/:id" element={<ProductDetail />} /> */}
 
         {/* privateRoute 설정 */}
-        <Route path="/product/:id" element={<PrivateRoute authenticate={authenticate} />}/>
+        {/* <Route path="/product/:id" element={<PrivateRoute authenticate={authenticate} />}/> */}
+        <Route path="/product/:id" element={ <PrivateRoute /> } />
 
         <Route path="/login" element={<Login setAuthenticate={setAuthenticate} />}/>
       </Routes>
