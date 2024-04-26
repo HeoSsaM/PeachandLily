@@ -12,7 +12,7 @@ export const ProductAll = () => {
     const getProducts = async () => {
         try {
             let keyword = query.get("q") || "";
-            let url = `http://localhost:5000/products/?q=${keyword}`;
+            let url = `https://github.com/HeoSsaM/peachandlily/blob/master/db.json?q=${keyword}`;
             let response = await fetch(url);
             let data = await response.json();
             if (data.length < 1) {
