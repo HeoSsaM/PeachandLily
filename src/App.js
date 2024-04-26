@@ -6,7 +6,7 @@ import { Login } from './pages/Login';
 import { ProductAll } from './pages/ProductAll';
 import { ProductDetail } from './pages/ProductDetail';
 import { Navbar }  from './component/Navbar';
-import PrivateRoute from './route/PrivateRoute';
+import { PrivateRoute } from './Route/PrivateRoute';
 
 /* 
 1. 전체상품페이지/상세페이지/로그인
