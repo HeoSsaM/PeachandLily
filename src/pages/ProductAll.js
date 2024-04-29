@@ -13,8 +13,8 @@ export const ProductAll = () => {
     const getProducts = async () => {
         try {
             let keyword = query.get("q") || "";
-            /* let url = `http://localhost:5000/products/?q=${keyword}`; */
-            let url = `https://my-json-server.typicode.com/HeoSsaM/peachnlily/products/${keyword}`;
+            let url = `http://localhost:5000/products/?q=${keyword}`;
+            /* let url = `https://my-json-server.typicode.com/HeoSsaM/peachnlily/products/${keyword}`; */
             let response = await fetch(url);
             let data = await response.json();
             if (data.length < 1) {
