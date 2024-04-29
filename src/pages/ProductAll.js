@@ -14,7 +14,7 @@ export const ProductAll = () => {
         try {
             let keyword = query.get("q") || "";
             /* let url = `http://localhost:5000/products/?q=${keyword}`; */
-            let url = `https://my-json-server.typicode.com/HeoSsaM/PeachandLily/products/${keyword}`;
+            let url = `https://my-json-server.typicode.com/HeoSsaM/peachnlily/products/?q=${keyword}`;
             let response = await fetch(url);
             let data = await response.json();
             if (data.length < 1) {
