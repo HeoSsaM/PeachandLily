@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Button, Row, Col } from 'react-bootstrap'
 import { useParams } from 'react-router-dom';
 
@@ -17,7 +17,7 @@ export const ProductDetail = () => {
     getProductDetail();
   }, []);
   return (
-    <Container>
+    <Container className='product_detail'>
       <Row className="product-detail">
         <Col className="productDetail-img">
           <img src={product?.img} alt="" />
@@ -27,9 +27,16 @@ export const ProductDetail = () => {
           <div className="title">{product?.title}</div>
           <div className="sub_title">{product?.subTitle}</div>
           <div className="content">{product?.content}</div>
-          <div className="price">{product?.price}</div>
+          <div className="price">＄{product?.price}</div>
+          <div className="option">
+            {
+              product?.option.map((item, idx) => (
+                <span key={idx}>{item}</span>
+              ))
+            }
+          </div>
           <Button variant="dark">주문하기</Button>
-         </Col>
+        </Col>
       </Row>
     </Container>
   )
