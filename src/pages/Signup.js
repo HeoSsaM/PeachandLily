@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useSignup } from '../hooks/useSignup'
 //import googleLoginImg from '../img/google_login.svg';
-import { Form, Container, button } from 'react-bootstrap';
+import { Form, Container, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 export const Signup = () => {
@@ -34,7 +34,7 @@ export const Signup = () => {
         <Container className='login_cont'>
             <Form onSubmit={handleSubmit}>
                 <fieldset>
-                    <h1>회원가입</h1>
+                    <h1>SIGN UP</h1>
                     <Form.Group className='mb25'>
                         <Form.Label>Email address</Form.Label>
                         <Form.Control type="email" placeholder="Enter email"  onChange={handleData} />
@@ -51,7 +51,7 @@ export const Signup = () => {
                     </Form.Group>
 
                     <div className="btn_area">
-                        <button type='submit' className='btn_join'>회원가입</button>
+                        <Button variant="outline-danger" type='submit' className='btn_join'>회원가입</Button>
                         {/* <button type="submit" id="loginGoogle">
                             <img src={googleLoginImg} alt="구글로그인" />
                         </button> */}

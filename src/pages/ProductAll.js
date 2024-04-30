@@ -14,7 +14,7 @@ export const ProductAll = () => {
         try {
             let keyword = query.get("q") || "";
             /* let url = `http://localhost:5000/products/?q=${keyword}`; */
-            let url = `https://my-json-server.typicode.com/HeoSsaM/peachnlily/products/?q=${keyword}`;
+            let url = `https://my-json-server.typicode.com/HeoSsaM/PeachandLily/products/?q=${keyword}`;
             let response = await fetch(url);
             let data = await response.json();
             if (data.length < 1) {
@@ -36,13 +36,13 @@ export const ProductAll = () => {
     
     return (
         <Container>
-            <Row className="product_list">
-                {products.map((item, index) => (
-                    <Col key={index} lg={3}>
-                        <ProductCard item={item} />
-                    </Col>
-                ))}
-            </Row>
-        </Container>
+        <Row className="product_list">
+            {products.map((item, index) => (
+                <Col key={index} lg={3}>
+                    <ProductCard item={item} />
+                </Col>
+            ))}
+        </Row>
+    </Container>
     );
 };

@@ -2,9 +2,10 @@ import React from 'react';
 import { Link, useNavigate, Navigate } from 'react-router-dom';
 /* import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from "@fortawesome/free-regular-svg-icons"; */
+
 import { FaRegUser } from "react-icons/fa";
-import { FiSearch } from "react-icons/fi";
 import { BiLogInCircle } from "react-icons/bi";
+import { FiSearch } from "react-icons/fi";
 import { Container } from 'react-bootstrap';
 import { useAuthContext } from '../hooks/useAuthContext';
 import { useLogout } from '../hooks/useLogout';
@@ -12,7 +13,7 @@ import { useLogout } from '../hooks/useLogout';
 
 export const Navbar = () => {
     const { user } = useAuthContext();
-    const { logout } = useLogout();
+    const {logout}=useLogout();
 
     const menuList = [
         'Shop All',
@@ -50,8 +51,8 @@ export const Navbar = () => {
                 {
                     !user && (
                         <ul className='login_area'>
-                            <li><Link to='/login'>{FaRegUser} 로그인</Link></li>
-                            <li><Link to='/signup'>{BiLogInCircle} 회원가입</Link></li>
+                            <li><Link to='/login'><FaRegUser /> SIGN IN</Link></li>
+                            <li><Link to='/signup'><BiLogInCircle /> SIGN UP</Link></li>
                         </ul>
                     )
                 }
@@ -61,10 +62,10 @@ export const Navbar = () => {
                 {
                     user && (
                         <ul className='login_area'>
-                            <li><strong>환영합니다. {user.displayName}
-                            님</strong></li>
+                            <li><strong>WELCOME!. {user.displayName}
+                            </strong></li>
                             <li>
-                                <button type="button" onClick={logout}>로그아웃</button>
+                                <button type="button" className="btn_logout" onClick={logout}>LOGOUT</button>
                             </li>
                         </ul>
                     )

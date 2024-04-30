@@ -25,9 +25,12 @@ export const Login = () => {
     }
   };
 
+  const gotoSignup = () => {
+    navigate("/signup")
+  }
   return (
     <Container className="login_cont">
-      <h1>로그인</h1>
+      <h1>LOGIN</h1>
       <Form onSubmit={(event) => loginUser(event)}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
@@ -39,7 +42,10 @@ export const Login = () => {
           <Form.Control type="password" placeholder="Password" required value={password} onChange={handleData} />
         </Form.Group>
 
-        <Button variant="danger" type="submit">Submit</Button>
+        <div className="btn_area">
+          <Button variant="danger" type="submit">LOGIN</Button>
+          <Button variant="outline-secondary" onClick={gotoSignup}>REGISTER</Button>
+        </div>
       </Form>
     </Container>
   );
